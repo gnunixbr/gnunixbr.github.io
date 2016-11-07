@@ -1,64 +1,81 @@
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<html dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8" />
-<title>Doc: developer options - CyanogenMod</title>
-<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+	<meta charset="UTF-8" />
+	<title>Doc: developer options - CyanogenMod</title>
+	<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
 mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Doc:_developer_options","wgTitle":"Doc: developer options","wgCurRevisionId":34838,"wgRevisionId":34838,"wgArticleId":1175,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Doc:_developer_options","wgRelevantArticleId":1175,"wgIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":!1,"dialogs":!1,"preview":!1,"publish":!1},
 "wgULSAcceptLanguageList":["pt-br","pt","en-us","en"],"wgULSCurrentAutonym":"English","wgTranslatePageTranslation":"source"});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.uls.init","ext.uls.interface","skins.vector.js"]);
 } );</script>
-<link rel="stylesheet" href="https://wiki.cyanogenmod.org/load.php?debug=false&amp;lang=en&amp;modules=ext.translate%7Cext.uls.nojs%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;printable=1&amp;skin=vector" />
-<meta name="ResourceLoaderDynamicStyles" content="" />
-<link rel="stylesheet" href="https://wiki.cyanogenmod.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;printable=1&amp;skin=vector" />
-<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
-<script async="" src="https://wiki.cyanogenmod.org/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;printable=1&amp;skin=vector"></script>
-<meta name="generator" content="MediaWiki 1.26.2" />
-<meta name="robots" content="noindex,follow" />
-<link rel="shortcut icon" href="https://wiki.cyanogenmod.org/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.cyanogenmod.org/opensearch_desc.php" title="CyanogenMod (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="https://wiki.cyanogenmod.org/api.php?action=rsd" />
-<link rel="alternate" type="application/atom+xml" title="CyanogenMod Atom feed" href="https://wiki.cyanogenmod.org/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<!--[if lt IE 7]><style type="text/css">body{behavior:url("https://wiki.cyanogenmod.org/skins/Vector/csshover.min.htc")}</style><![endif]-->
+	<link href="https://wiki.cyanogenmod.org/load.php?debug=false&amp;lang=en&amp;modules=ext.translate%7Cext.uls.nojs%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;printable=1&amp;skin=vector" rel="stylesheet" />
+	<meta content="" name="ResourceLoaderDynamicStyles" />
+	<link href="https://wiki.cyanogenmod.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;printable=1&amp;skin=vector" rel="stylesheet" />
+	<style type="text/css">a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+	</style>
+	<script async="" src="https://wiki.cyanogenmod.org/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;printable=1&amp;skin=vector"></script>
+	<meta content="MediaWiki 1.26.2" name="generator" />
+	<meta content="noindex,follow" name="robots" />
+	<link href="https://wiki.cyanogenmod.org/favicon.ico" rel="shortcut icon" />
+	<link href="https://wiki.cyanogenmod.org/opensearch_desc.php" rel="search" title="CyanogenMod (en)" type="application/opensearchdescription+xml" />
+	<link href="https://wiki.cyanogenmod.org/api.php?action=rsd" rel="EditURI" type="application/rsd+xml" />
+	<link href="https://wiki.cyanogenmod.org/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="CyanogenMod Atom feed" type="application/atom+xml" /><!--[if lt IE 7]><style type="text/css">body{behavior:url("https://wiki.cyanogenmod.org/skins/Vector/csshover.min.htc")}</style><![endif]-->
 </head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Doc_developer_options skin-vector action-view">
-		<div id="mw-page-base" class="noprint"></div>
-		<div id="mw-head-base" class="noprint"></div>
-		<div id="content" class="mw-body" role="main">
-			<a id="top"></a>
+<div class="noprint" id="mw-page-base">&nbsp;</div>
 
-						<div class="mw-indicators">
+<div class="noprint" id="mw-head-base">&nbsp;</div>
+
+<div class="mw-body" id="content" role="main">
+<div class="mw-indicators">&nbsp;</div>
+
+<h1 class="firstHeading" id="firstHeading" lang="en">Doc: op&ccedil;&otilde;es de desenvolvedor</h1>
+
+<div class="mw-body-content" id="bodyContent">
+<div id="siteSub">De CyanogenMod</div>
+
+<div id="contentSub">&nbsp;</div>
+
+<div class="mw-jump" id="jump-to-nav">Jump to: <a href="#mw-head">navigation</a>, <a href="#p-search">search</a></div>
+
+<div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en">
+<div class="mw-pt-languages noprint" dir="ltr" lang="en">
+<div class="mw-pt-languages-label">Other languages:</div>
+
+<div class="mw-pt-languages-list autonym"><a class="mw-pt-progress mw-pt-progress--low" href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/de" title="Doc: Entwickleroptionen (36% translated)">Deutsch</a> &bull; &lrm;<span class="mw-pt-languages-ui mw-pt-languages-selected mw-pt-progress mw-pt-progress--complete">English</span> &bull; &lrm;<a class="mw-pt-progress mw-pt-progress--stub" href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/es" title="Documentación: Opciones de desarrollo (18% translated)">espa&ntilde;ol</a> &bull; &lrm;<a class="mw-pt-progress mw-pt-progress--complete" href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/fr" title="Documentation&nbsp;: &quot;Options pour les développeurs&quot; et &quot;Performances&quot; (82% translated)">fran&ccedil;ais</a> &bull; &lrm;<a class="mw-pt-progress mw-pt-progress--stub" href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/he" title="עזרה: אפשרויות מפתח (9% translated)">עברית</a> &bull; &lrm;<a class="mw-pt-progress mw-pt-progress--complete" href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/ja" title="資料: 開発者向けオプション (82% translated)">日本語</a> &bull; &lrm;<a class="mw-pt-progress mw-pt-progress--stub" href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/nl" title="Handleiding: opties voor ontwikkeling (9% translated)">Nederlands</a> &bull; &lrm;<a class="mw-pt-progress mw-pt-progress--stub" href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/pt" title="Doc: Opções de desenvolvedor (9% translated)">portugu&ecirc;s</a> &bull; &lrm;<a class="mw-pt-progress mw-pt-progress--stub" href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/pt-br" title="Doc: Opções de desenvolvedor (9% translated)">portugu&ecirc;s do Brasil</a> &bull; &lrm;<a class="mw-pt-progress mw-pt-progress--complete" href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/ru" title="Doc: Опции для разработчиков (82% translated)">русский</a> &bull; &lrm;<a class="mw-pt-progress mw-pt-progress--complete" href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/zh-cn" title="文档：开发者选项 (82% translated)">中文（中国大陆）&lrm;</a></div>
 </div>
-			<h1 id="firstHeading" class="firstHeading" lang="en">Doc: developer options</h1>
-									<div id="bodyContent" class="mw-body-content">
-									<div id="siteSub">From CyanogenMod</div>
-								<div id="contentSub"></div>
-												<div id="jump-to-nav" class="mw-jump">
-					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
-				</div>
-				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-pt-languages noprint" lang="en" dir="ltr"><div class="mw-pt-languages-label">Other languages:</div><div class="mw-pt-languages-list autonym"><a href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/de" title="Doc: Entwickleroptionen (36% translated)" class="mw-pt-progress mw-pt-progress--low">Deutsch</a> • ‎<span class="mw-pt-languages-ui mw-pt-languages-selected mw-pt-progress mw-pt-progress--complete">English</span> • ‎<a href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/es" title="Documentación: Opciones de desarrollo (18% translated)" class="mw-pt-progress mw-pt-progress--stub">español</a> • ‎<a href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/fr" title="Documentation&#160;: &quot;Options pour les développeurs&quot; et &quot;Performances&quot; (82% translated)" class="mw-pt-progress mw-pt-progress--complete">français</a> • ‎<a href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/he" title="עזרה: אפשרויות מפתח (9% translated)" class="mw-pt-progress mw-pt-progress--stub">עברית</a> • ‎<a href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/ja" title="資料: 開発者向けオプション (82% translated)" class="mw-pt-progress mw-pt-progress--complete">日本語</a> • ‎<a href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/nl" title="Handleiding: opties voor ontwikkeling (9% translated)" class="mw-pt-progress mw-pt-progress--stub">Nederlands</a> • ‎<a href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/pt" title="Doc: Opções de desenvolvedor (9% translated)" class="mw-pt-progress mw-pt-progress--stub">português</a> • ‎<a href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/pt-br" title="Doc: Opções de desenvolvedor (9% translated)" class="mw-pt-progress mw-pt-progress--stub">português do Brasil</a> • ‎<a href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/ru" title="Doc: Опции для разработчиков (82% translated)" class="mw-pt-progress mw-pt-progress--complete">русский</a> • ‎<a href="https://wiki.cyanogenmod.org/w/Doc:_developer_options/zh-cn" title="文档：开发者选项 (82% translated)" class="mw-pt-progress mw-pt-progress--complete">中文（中国大陆）‎</a></div></div>
-<h2><span class="mw-headline" id="Enabling_Developer_options">Enabling Developer options</span></h2>
-<p>Android includes a special <b>Developer options</b> menu with settings relevant to advanced users and developers. Many of the options come from Android and CyanogenMod provides several additions. This menu is hidden by default, but can be activated with the following steps:
-</p>
-<ol><li>From <b>Settings</b>, select <b>About phone</b> (or <b>About tablet</b>).</li>
-<li>Tap the <b>Build number</b> entry seven times. On the seventh tap, you will be notified that "You are now a developer."</li>
-<li>Return to <b>Settings</b>.  <b>Developer options</b> should now be visible.</li></ol>
+
+<h2><span class="mw-headline" id="Enabling_Developer_options">Ativando as op&ccedil;&otilde;es de desenvolvedor</span></h2>
+
+<p>O Android possui as <b>&ldquo;Op&ccedil;&otilde;es de desenvolvedor&rdquo;</b>, um menu especial com configura&ccedil;&otilde;es relevantes para usu&aacute;rios avan&ccedil;ados e desenvolvedores. Muitas de tais op&ccedil;&otilde;es vieram do Android e o CyanogenMod trouxe algumas modifica&ccedil;&otilde;es. Por padr&atilde;o, este menu &eacute; oculto, mas pode ser ativado com s seguintes passos:</p>
+
+<ol>
+	<li>Em&nbsp;<b>&ldquo;Configura&ccedil;&otilde;es&rdquo;</b>, clique em&nbsp;<b>&ldquo;Sobre o telefone&rdquo;</b>&nbsp;(ou&nbsp;<b>&ldquo;Sobre o tablet&rdquo;</b>).</li>
+	<li>Clique sete vezes em&nbsp;<b>&ldquo;N&uacute;mero da vers&atilde;o&rdquo;</b>. Na s&eacute;tima vez, voc&ecirc; ser&aacute; notificado de que &ldquo;Voc&ecirc; ativou as configura&ccedil;&otilde;es de desenvolvedor!&rdquo;.</li>
+	<li>Retorne para o menu&nbsp;<b>&ldquo;Configurar&rdquo;</b>. As&nbsp;<b>Op&ccedil;&otilde;es de desenvovedors</b> devem estar vis&iacute;veis agora.</li>
+</ol>
+
 <div class="infoBox" style="position:relative; padding:5px 5px 5px 73px; margin:0.4em 0 0.5em; background:#ddd; min-height:57px;">
-<div class="bar"></div>
-<p style="font-size:110%;"><b>Note: </b></p>
-<p>The need to manually enable <b>Developer options</b> before it appears in <b>Settings</b> was introduced by Android 4.1 (CyanogenMod 10.1).
-</p>
+<div class="bar">&nbsp;</div>
+
+<p style="font-size:110%;"><b>Nota: </b></p>
+
+<p>A necessidade de se ativar manualmente as&nbsp;<b>Op&ccedil;&otilde;es de desenvolvedor</b>&nbsp;foi introduzida pelo&nbsp;Android 4.1 (CyanogenMod 10.1).</p>
 </div>
-<h2><span class="mw-headline" id="Enable_USB_debugging">Enable USB debugging</span></h2>
-<p>The most common debugging techniques used to diagnose problems on Android are <a href="https://wiki.cyanogenmod.org/w/Logcat" title="Logcat" class="mw-redirect">Logcat</a> and kernel logs (<code>dmesg</code>). The first step to using these tools is enabling USB debugging so that you can generate and pull logs from your phone to your computer. USB debugging has a number of other uses as well, see the <a href="https://wiki.cyanogenmod.org/w/Adb" title="Adb" class="mw-redirect">adb</a> page.
-</p><p>To enable USB debugging:
-</p>
-<ol><li>Enable Developer options by following the instructions in the previous section</li>
-<li>Enable System &gt; Developers options &gt; Android debugging</li></ol>
-<h2><span class="mw-headline" id="Managing_superuser_.28root.29">Managing superuser (root)</span></h2>
-<p>Beginning with CyanogenMod 12, root options are enabled from the <b>Developer options</b> menu. Look for the option entitled "Root access". By default, root is disabled for security purposes. Root permissions for apps are handled by Privacy Guard in Settings. Tap an application to enable/disable root access for that application.
-</p>
+
+<h2><span class="mw-headline" id="Enable_USB_debugging">Ativando a depura&ccedil;&atilde;o USB</span></h2>
+
+<p>As t&eacute;cnicas de depura&ccedil;&atilde;o mais usadas para dignosticar problemas no Android s&atilde;o&nbsp;<a href="https://wiki.cyanogenmod.org/w/Logcat">Logcat</a> e os relat&oacute;rios de kernel (<code>dmesg</code>). O primeiro passo para usar tais ferramentas &eacute; ativar a depura&ccedil;&atilde;o USB, da&iacute; voc&ecirc; poder&aacute; gerar e transferir relat&oacute;orios dos seu dispositivo para o seu computador. A depura&ccedil;&atilde;o USB possui in&uacute;meros usos, para tanto, visite a p&aacute;gina sobre&nbsp;<a href="https://wiki.cyanogenmod.org/w/Adb">adb</a>.</p>
+
+<p>Para ativar a depura&ccedil;&atilde;o USB:</p>
+
+<ol>
+	<li>Ative as Op&ccedil;&otilde;es de desenvolvedor seguindo as instru&ccedil;&otilde;es constantes na se&ccedil;&atilde;o anterior</li>
+	<li>&ldquo;Configurar&rdquo; &gt; &ldquo;Op&ccedil;&otilde;es de desenvolvedor&rdquo; &gt; &ldquo;Depura&ccedil;&atilde;o android&rdquo;</li>
+</ol>
+
+<h2><span class="mw-headline" id="Managing_superuser_.28root.29">Gerneciando o superusu&aacute;rio (root)</span></h2>
+
+<p>Desde o CyanogenMod 12, op&ccedil;&otilde;es de root s&atilde;o ativadas nas <b>Op&ccedil;&otilde;es de desenvolvedor</b>. Procure a op&ccedil;&atilde;o &ldquo;Acesso superusu&aacute;rio&quot;. Por quest&otilde;es de seguran&ccedil;a, o Acesso superusu&aacute;rio vem desativado por padr&atilde;o. O acesso superusu&aacute;rio para aplicativos s&atilde;o controlados atrav&eacute;s do menu &ldquo;Configurar&rdquo; &gt; &ldquo;Privacidade&rdquo; &gt; &ldquo;Prote&ccedil;&atilde;o &agrave; privacidade&rdquo;. Clique num aplicativo listado para permitir/negar o&nbsp;acesso superusu&aacute;rio.</p>
 <!-- 
 NewPP limit report
 Cached time: 20161107025004
@@ -72,150 +89,189 @@ Post‐expand include size: 344/2097152 bytes
 Template argument size: 137/2097152 bytes
 Highest expansion depth: 3/40
 Expensive parser function count: 0/100
--->
-
-<!-- 
+--><!-- 
 Transclusion expansion time report (%,ms,calls,template)
 100.00%   10.245      1 - -total
 100.00%   10.245      1 - Template:Note
--->
+--><!-- Saved in parser cache with key mediawiki-cmw_:pcache:idhash:1175-0!*!0!!en!*!* and timestamp 20161107025004 and revision id 34838
+ --></div>
 
-<!-- Saved in parser cache with key mediawiki-cmw_:pcache:idhash:1175-0!*!0!!en!*!* and timestamp 20161107025004 and revision id 34838
- -->
-</div>					<div class="printfooter">
-						Retrieved from "<a dir="ltr" href="https://wiki.cyanogenmod.org/index.php?title=Doc:_developer_options&amp;oldid=34838">https://wiki.cyanogenmod.org/index.php?title=Doc:_developer_options&amp;oldid=34838</a>"					</div>
-				<div id='catlinks' class='catlinks catlinks-allhidden'></div>				<div class="visualClear"></div>
-							</div>
-		</div>
-		<div id="mw-navigation">
-			<h2>Navigation menu</h2>
+<div class="printfooter">Retrieved from &quot;<a dir="ltr" href="https://wiki.cyanogenmod.org/index.php?title=Doc:_developer_options&amp;oldid=34838">https://wiki.cyanogenmod.org/index.php?title=Doc:_developer_options&amp;oldid=34838</a>&quot;</div>
 
-			<div id="mw-head">
-									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
-						<h3 id="p-personal-label">Personal tools</h3>
-						<ul>
-							<li id="pt-uls" class="active"><a href="#" class="uls-trigger autonym">English</a></li><li id="pt-login"><a href="https://wiki.cyanogenmod.org/index.php?title=Special:UserLogin&amp;returnto=Doc%3A+developer+options&amp;returntoquery=printable%3Dyes" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
-					</div>
-									<div id="left-navigation">
-										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
-						<h3 id="p-namespaces-label">Namespaces</h3>
-						<ul>
-															<li  id="ca-nstab-main" class="selected"><span><a href="https://wiki.cyanogenmod.org/w/Doc:_developer_options"  title="View the content page [c]" accesskey="c">Page</a></span></li>
-															<li  id="ca-talk" class="new"><span><a href="https://wiki.cyanogenmod.org/index.php?title=Talk:Doc:_developer_options&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Discussion</a></span></li>
-													</ul>
-					</div>
-										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
-												<h3 id="p-variants-label">
-							<span>Variants</span><a href="#"></a>
-						</h3>
+<div class="catlinks catlinks-allhidden" id="catlinks">&nbsp;</div>
 
-						<div class="menu">
-							<ul>
-															</ul>
-						</div>
-					</div>
-									</div>
-				<div id="right-navigation">
-										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
-						<h3 id="p-views-label">Views</h3>
-						<ul>
-															<li id="ca-view" class="selected"><span><a href="https://wiki.cyanogenmod.org/w/Doc:_developer_options" >Read</a></span></li>
-															<li id="ca-viewsource"><span><a href="https://wiki.cyanogenmod.org/index.php?title=Doc:_developer_options&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
-															<li id="ca-history" class="collapsible"><span><a href="https://wiki.cyanogenmod.org/index.php?title=Doc:_developer_options&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
-													</ul>
-					</div>
-										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
-						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+<div class="visualClear">&nbsp;</div>
+</div>
+</div>
 
-						<div class="menu">
-							<ul>
-															</ul>
-						</div>
-					</div>
-										<div id="p-search" role="search">
-						<h3>
-							<label for="searchInput">Search</label>
-						</h3>
+<div id="mw-navigation">
+<h2>Navigation menu</h2>
 
-						<form action="https://wiki.cyanogenmod.org/index.php" id="searchform">
-							<div id="simpleSearch">
-							<input type="search" name="search" placeholder="Search" title="Search CyanogenMod [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
-						</form>
-					</div>
-									</div>
-			</div>
-			<div id="mw-panel">
-				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://wiki.cyanogenmod.org/w/Main_Page"  title="Visit the main page"></a></div>
-						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
-			<h3 id='p-navigation-label'>Navigation</h3>
+<div id="mw-head">
+<div aria-labelledby="p-personal-label" id="p-personal" role="navigation">
+<h3 id="p-personal-label">Personal tools</h3>
 
-			<div class="body">
-									<ul>
-						<li id="n-mainpage-description"><a href="https://wiki.cyanogenmod.org/w/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-Devices"><a href="https://wiki.cyanogenmod.org/w/Devices">Devices</a></li><li id="n-About-CM"><a href="https://wiki.cyanogenmod.org/w/About">About CM</a></li><li id="n-Report-a-Wiki-Problem"><a href="https://wiki.cyanogenmod.org/w/Wiki_Problems">Report a Wiki Problem</a></li><li id="n-Recent-Changes"><a href="https://wiki.cyanogenmod.org/w/Special:RecentChanges">Recent Changes</a></li>					</ul>
-							</div>
-		</div>
-			<div class="portal" role="navigation" id='p-Get_CyanogenMod' aria-labelledby='p-Get_CyanogenMod-label'>
-			<h3 id='p-Get_CyanogenMod-label'>Get CyanogenMod</h3>
+<ul>
+	<li class="active" id="pt-uls"><a class="uls-trigger autonym" href="#">English</a></li>
+	<li id="pt-login"><a accesskey="o" href="https://wiki.cyanogenmod.org/index.php?title=Special:UserLogin&amp;returnto=Doc%3A+developer+options&amp;returntoquery=printable%3Dyes" title="You are encouraged to log in; however, it is not mandatory [o]">Log in</a></li>
+</ul>
+</div>
 
-			<div class="body">
-									<ul>
-						<li id="n-Official-Downloads"><a href="http://download.cyanogenmod.org" rel="nofollow" target="_blank">Official Downloads</a></li><li id="n-Unofficial-Ports"><a href="https://wiki.cyanogenmod.org/w/Unofficial_Ports">Unofficial Ports</a></li>					</ul>
-							</div>
-		</div>
-			<div class="portal" role="navigation" id='p-General_Support' aria-labelledby='p-General_Support-label'>
-			<h3 id='p-General_Support-label'>General Support</h3>
+<div id="left-navigation">
+<div aria-labelledby="p-namespaces-label" class="vectorTabs" id="p-namespaces" role="navigation">
+<h3 id="p-namespaces-label">Namespaces</h3>
 
-			<div class="body">
-									<ul>
-						<li id="n-Start-Here"><a href="https://wiki.cyanogenmod.org/w/Support">Start Here</a></li><li id="n-Chat"><a href="https://wiki.cyanogenmod.org/w/CM_IRC_channels">Chat</a></li><li id="n-Forums"><a href="http://forum.cyanogenmod.org" rel="nofollow" target="_blank">Forums</a></li><li id="n-Google.2B-Community"><a href="https://plus.google.com/communities/107373456059326217974" rel="nofollow" target="_blank">Google+ Community</a></li><li id="n-Issue-Tracker"><a href="https://wiki.cyanogenmod.org/w/Jira">Issue Tracker</a></li>					</ul>
-							</div>
-		</div>
-			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
-			<h3 id='p-Community-label'>Community</h3>
+<ul>
+	<li class="selected" id="ca-nstab-main"><span><a accesskey="c" href="https://wiki.cyanogenmod.org/w/Doc:_developer_options" title="View the content page [c]">Page</a></span></li>
+	<li class="new" id="ca-talk"><span><a accesskey="t" href="https://wiki.cyanogenmod.org/index.php?title=Talk:Doc:_developer_options&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]">Discussion</a></span></li>
+</ul>
+</div>
 
-			<div class="body">
-									<ul>
-						<li id="n-Start-Here"><a href="https://wiki.cyanogenmod.org/w/Community">Start Here</a></li><li id="n-Blog"><a href="http://www.cyanogenmod.org/blog" rel="nofollow" target="_blank">Blog</a></li><li id="n-Contributors"><a href="https://wiki.cyanogenmod.org/w/Devs">Contributors</a></li><li id="n-Facebook"><a href="https://www.facebook.com/CyanogenMod" rel="nofollow" target="_blank">Facebook</a></li><li id="n-Twitter"><a href="https://twitter.com/CyanogenMod" rel="nofollow" target="_blank">Twitter</a></li>					</ul>
-							</div>
-		</div>
-			<div class="portal" role="navigation" id='p-Developer_Resources' aria-labelledby='p-Developer_Resources-label'>
-			<h3 id='p-Developer_Resources-label'>Developer Resources</h3>
+<div aria-labelledby="p-variants-label" class="vectorMenu emptyPortlet" id="p-variants" role="navigation">
+<h3 id="p-variants-label"><span>Variants</span></h3>
 
-			<div class="body">
-									<ul>
-						<li id="n-Start-Here"><a href="https://wiki.cyanogenmod.org/w/Development">Start Here</a></li><li id="n-Gerrit-Code-Review"><a href="http://review.cyanogenmod.org" rel="nofollow" target="_blank">Gerrit Code Review</a></li><li id="n-Source-Code"><a href="https://github.com/cyanogenmod" rel="nofollow" target="_blank">Source Code</a></li>					</ul>
-							</div>
-		</div>
-			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
-			<h3 id='p-tb-label'>Tools</h3>
+<div class="menu">
+<ul>
+</ul>
+</div>
+</div>
+</div>
 
-			<div class="body">
-									<ul>
-						<li id="t-whatlinkshere"><a href="https://wiki.cyanogenmod.org/w/Special:WhatLinksHere/Doc:_developer_options" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://wiki.cyanogenmod.org/w/Special:RecentChangesLinked/Doc:_developer_options" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://wiki.cyanogenmod.org/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="https://wiki.cyanogenmod.org/index.php?title=Doc:_developer_options&amp;oldid=34838" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://wiki.cyanogenmod.org/index.php?title=Doc:_developer_options&amp;action=info" title="More information about this page">Page information</a></li>					</ul>
-							</div>
-		</div>
-				</div>
-		</div>
-		<div id="footer" role="contentinfo">
-							<ul id="footer-info">
-											<li id="footer-info-lastmod"> This page was last modified on 19 November 2015, at 05:09.</li>
-									</ul>
-							<ul id="footer-places">
-											<li id="footer-places-privacy"><a href="https://wiki.cyanogenmod.org/w/CyanogenMod:Privacy_policy" title="CyanogenMod:Privacy policy">Privacy policy</a></li>
-											<li id="footer-places-about"><a href="https://wiki.cyanogenmod.org/w/CyanogenMod:About" title="CyanogenMod:About">About CyanogenMod</a></li>
-											<li id="footer-places-disclaimer"><a href="https://wiki.cyanogenmod.org/w/CyanogenMod:General_disclaimer" title="CyanogenMod:General disclaimer">Disclaimers</a></li>
-									</ul>
-										<ul id="footer-icons" class="noprint">
-											<li id="footer-poweredbyico">
-							<a href="https://wiki.cyanogenmod.org//www.mediawiki.org/"><img src="https://wiki.cyanogenmod.org/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="https://wiki.cyanogenmod.org/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
-									</ul>
-						<div style="clear:both"></div>
-		</div>
-		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+<div id="right-navigation">
+<div aria-labelledby="p-views-label" class="vectorTabs" id="p-views" role="navigation">
+<h3 id="p-views-label">Views</h3>
+
+<ul>
+	<li class="selected" id="ca-view"><span><a href="https://wiki.cyanogenmod.org/w/Doc:_developer_options">Read</a></span></li>
+	<li id="ca-viewsource"><span><a accesskey="e" href="https://wiki.cyanogenmod.org/index.php?title=Doc:_developer_options&amp;action=edit" title="This page is protected.
+You can view its source [e]">View source</a></span></li>
+	<li class="collapsible" id="ca-history"><span><a accesskey="h" href="https://wiki.cyanogenmod.org/index.php?title=Doc:_developer_options&amp;action=history" title="Past revisions of this page [h]">View history</a></span></li>
+</ul>
+</div>
+
+<div aria-labelledby="p-cactions-label" class="vectorMenu emptyPortlet" id="p-cactions" role="navigation">
+<h3 id="p-cactions-label"><span>More</span></h3>
+
+<div class="menu">
+<ul>
+</ul>
+</div>
+</div>
+
+<div id="p-search" role="search">
+<h3><label for="searchInput">Search</label></h3>
+
+<form action="https://wiki.cyanogenmod.org/index.php" id="searchform">
+<div id="simpleSearch"><input accesskey="f" id="searchInput" name="search" placeholder="Search" title="Search CyanogenMod [f]" type="search" /><input name="title" type="hidden" value="Special:Search" /><input class="searchButton mw-fallbackSearchButton" id="mw-searchButton" name="fulltext" title="Search the pages for this text" type="submit" value="Search" /><input class="searchButton" id="searchButton" name="go" title="Go to a page with this exact name if it exists" type="submit" value="Go" /></div>
+</form>
+</div>
+</div>
+</div>
+
+<div id="mw-panel">
+<div id="p-logo" role="banner">&nbsp;</div>
+
+<div aria-labelledby="p-navigation-label" class="portal" id="p-navigation" role="navigation">
+<h3 id="p-navigation-label">Navigation</h3>
+
+<div class="body">
+<ul>
+	<li id="n-mainpage-description"><a accesskey="z" href="https://wiki.cyanogenmod.org/w/Main_Page" title="Visit the main page [z]">Main page</a></li>
+	<li id="n-Devices"><a href="https://wiki.cyanogenmod.org/w/Devices">Devices</a></li>
+	<li id="n-About-CM"><a href="https://wiki.cyanogenmod.org/w/About">About CM</a></li>
+	<li id="n-Report-a-Wiki-Problem"><a href="https://wiki.cyanogenmod.org/w/Wiki_Problems">Report a Wiki Problem</a></li>
+	<li id="n-Recent-Changes"><a href="https://wiki.cyanogenmod.org/w/Special:RecentChanges">Recent Changes</a></li>
+</ul>
+</div>
+</div>
+
+<div aria-labelledby="p-Get_CyanogenMod-label" class="portal" id="p-Get_CyanogenMod" role="navigation">
+<h3 id="p-Get_CyanogenMod-label">Get CyanogenMod</h3>
+
+<div class="body">
+<ul>
+	<li id="n-Official-Downloads"><a href="http://download.cyanogenmod.org" rel="nofollow" target="_blank">Official Downloads</a></li>
+	<li id="n-Unofficial-Ports"><a href="https://wiki.cyanogenmod.org/w/Unofficial_Ports">Unofficial Ports</a></li>
+</ul>
+</div>
+</div>
+
+<div aria-labelledby="p-General_Support-label" class="portal" id="p-General_Support" role="navigation">
+<h3 id="p-General_Support-label">General Support</h3>
+
+<div class="body">
+<ul>
+	<li id="n-Start-Here"><a href="https://wiki.cyanogenmod.org/w/Support">Start Here</a></li>
+	<li id="n-Chat"><a href="https://wiki.cyanogenmod.org/w/CM_IRC_channels">Chat</a></li>
+	<li id="n-Forums"><a href="http://forum.cyanogenmod.org" rel="nofollow" target="_blank">Forums</a></li>
+	<li id="n-Google.2B-Community"><a href="https://plus.google.com/communities/107373456059326217974" rel="nofollow" target="_blank">Google+ Community</a></li>
+	<li id="n-Issue-Tracker"><a href="https://wiki.cyanogenmod.org/w/Jira">Issue Tracker</a></li>
+</ul>
+</div>
+</div>
+
+<div aria-labelledby="p-Community-label" class="portal" id="p-Community" role="navigation">
+<h3 id="p-Community-label">Community</h3>
+
+<div class="body">
+<ul>
+	<li id="n-Start-Here"><a href="https://wiki.cyanogenmod.org/w/Community">Start Here</a></li>
+	<li id="n-Blog"><a href="http://www.cyanogenmod.org/blog" rel="nofollow" target="_blank">Blog</a></li>
+	<li id="n-Contributors"><a href="https://wiki.cyanogenmod.org/w/Devs">Contributors</a></li>
+	<li id="n-Facebook"><a href="https://www.facebook.com/CyanogenMod" rel="nofollow" target="_blank">Facebook</a></li>
+	<li id="n-Twitter"><a href="https://twitter.com/CyanogenMod" rel="nofollow" target="_blank">Twitter</a></li>
+</ul>
+</div>
+</div>
+
+<div aria-labelledby="p-Developer_Resources-label" class="portal" id="p-Developer_Resources" role="navigation">
+<h3 id="p-Developer_Resources-label">Developer Resources</h3>
+
+<div class="body">
+<ul>
+	<li id="n-Start-Here"><a href="https://wiki.cyanogenmod.org/w/Development">Start Here</a></li>
+	<li id="n-Gerrit-Code-Review"><a href="http://review.cyanogenmod.org" rel="nofollow" target="_blank">Gerrit Code Review</a></li>
+	<li id="n-Source-Code"><a href="https://github.com/cyanogenmod" rel="nofollow" target="_blank">Source Code</a></li>
+</ul>
+</div>
+</div>
+
+<div aria-labelledby="p-tb-label" class="portal" id="p-tb" role="navigation">
+<h3 id="p-tb-label">Tools</h3>
+
+<div class="body">
+<ul>
+	<li id="t-whatlinkshere"><a accesskey="j" href="https://wiki.cyanogenmod.org/w/Special:WhatLinksHere/Doc:_developer_options" title="A list of all wiki pages that link here [j]">What links here</a></li>
+	<li id="t-recentchangeslinked"><a accesskey="k" href="https://wiki.cyanogenmod.org/w/Special:RecentChangesLinked/Doc:_developer_options" title="Recent changes in pages linked from this page [k]">Related changes</a></li>
+	<li id="t-specialpages"><a accesskey="q" href="https://wiki.cyanogenmod.org/w/Special:SpecialPages" title="A list of all special pages [q]">Special pages</a></li>
+	<li id="t-permalink"><a href="https://wiki.cyanogenmod.org/index.php?title=Doc:_developer_options&amp;oldid=34838" title="Permanent link to this revision of the page">Permanent link</a></li>
+	<li id="t-info"><a href="https://wiki.cyanogenmod.org/index.php?title=Doc:_developer_options&amp;action=info" title="More information about this page">Page information</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="footer" role="contentinfo">
+<ul id="footer-info">
+	<li id="footer-info-lastmod">Estta p&aacute;gina foi modificada em 07 de Novembro de 2016, &agrave;s 14:10.</li>
+</ul>
+
+<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://wiki.cyanogenmod.org/w/CyanogenMod:Privacy_policy" title="CyanogenMod:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="https://wiki.cyanogenmod.org/w/CyanogenMod:About" title="CyanogenMod:About">About CyanogenMod</a></li>
+	<li id="footer-places-disclaimer"><a href="https://wiki.cyanogenmod.org/w/CyanogenMod:General_disclaimer" title="CyanogenMod:General disclaimer">Disclaimers</a></li>
+</ul>
+
+<ul class="noprint" id="footer-icons">
+	<li id="footer-poweredbyico"><a href="https://wiki.cyanogenmod.org//www.mediawiki.org/"><img alt="Powered by MediaWiki" height="31" src="https://wiki.cyanogenmod.org/resources/assets/poweredby_mediawiki_88x31.png" srcset="https://wiki.cyanogenmod.org/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" /></a></li>
+</ul>
+
+<div style="clear:both">&nbsp;</div>
+</div>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
 mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.uls.pt"]);
-} );</script>
-<script src="https://wiki.cyanogenmod.org//meta.wikimedia.org/geoiplookup"></script>
-<script>
+} );</script><script src="https://wiki.cyanogenmod.org//meta.wikimedia.org/geoiplookup"></script><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -225,9 +281,7 @@ mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawi
   ga('set', 'anonymizeIp', true);
   ga('send', 'pageview');
 
-</script>
-<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
 mw.config.set({"wgBackendResponseTime":145});
-} );</script>
-	</body>
+} );</script></body>
 </html>
