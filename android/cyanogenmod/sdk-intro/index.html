@@ -1,53 +1,62 @@
-
 <!DOCTYPE HTML>
-<html lang="en" dir="ltr" class="client-js"><head>
-<meta charset="UTF-8">
-<title>Doc: sdk intro - CyanogenMod</title>
-<script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Doc: sdk intro - CyanogenMod</title>
+	<script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
 mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Doc:_sdk_intro","wgTitle":"Doc: sdk intro","wgCurRevisionId":28843,"wgRevisionId":28843,"wgArticleId":376,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Android SDK"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Doc:_sdk_intro","wgRelevantArticleId":376,"wgIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":!1,"dialogs":!1,"preview":!1,"publish":!1},
 "wgULSAcceptLanguageList":[],"wgULSCurrentAutonym":"English","wgTranslatePageTranslation":"source"});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.uls.init","ext.uls.interface","skins.vector.js"]);
 } );</script>
-<link rel="stylesheet" href="https://wiki.cyanogenmod.org/load.php?debug=false&amp;lang=en&amp;modules=ext.translate%7Cext.uls.nojs%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector">
-<meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="https://wiki.cyanogenmod.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector">
-<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
-<script async="" src="https://wiki.cyanogenmod.org/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
-<meta name="generator" content="MediaWiki 1.26.2">
-<link rel="shortcut icon" href="https://wiki.cyanogenmod.org/favicon.ico">
-<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.cyanogenmod.org/opensearch_desc.php" title="CyanogenMod (en)">
-<link rel="EditURI" type="application/rsd+xml" href="https://wiki.cyanogenmod.org/api.php?action=rsd">
-<link rel="alternate" type="application/atom+xml" title="CyanogenMod Atom feed" href="https://wiki.cyanogenmod.org/index.php?title=Special:RecentChanges&amp;feed=atom">
-<!--[if lt IE 7]><style type="text/css">body{behavior:url("https://wiki.cyanogenmod.org/skins/Vector/csshover.min.htc")}</style><![endif]-->
-<script src="/load.php?debug=false&amp;lang=en&amp;modules=jquery%2Cmediawiki&amp;only=scripts&amp;skin=vector&amp;version=x6qVeSGh"></script><script src="/load.php?debug=false&amp;lang=en&amp;modules=jquery%2Cmediawiki&amp;only=scripts&amp;skin=vector&amp;version=x6qVeSGh"></script></head>
+	<link href="https://wiki.cyanogenmod.org/load.php?debug=false&amp;lang=en&amp;modules=ext.translate%7Cext.uls.nojs%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector" rel="stylesheet" />
+	<meta content="" name="ResourceLoaderDynamicStyles" />
+	<link href="https://wiki.cyanogenmod.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" rel="stylesheet" />
+	<style type="text/css">a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+	</style>
+	<script async="" src="https://wiki.cyanogenmod.org/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+	<meta content="MediaWiki 1.26.2" name="generator" />
+	<link href="https://wiki.cyanogenmod.org/favicon.ico" rel="shortcut icon" />
+	<link href="https://wiki.cyanogenmod.org/opensearch_desc.php" rel="search" title="CyanogenMod (en)" type="application/opensearchdescription+xml" />
+	<link href="https://wiki.cyanogenmod.org/api.php?action=rsd" rel="EditURI" type="application/rsd+xml" />
+	<link href="https://wiki.cyanogenmod.org/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="CyanogenMod Atom feed" type="application/atom+xml" /><!--[if lt IE 7]><style type="text/css">body{behavior:url("https://wiki.cyanogenmod.org/skins/Vector/csshover.min.htc")}</style><![endif]--><script src="/load.php?debug=false&amp;lang=en&amp;modules=jquery%2Cmediawiki&amp;only=scripts&amp;skin=vector&amp;version=x6qVeSGh"></script><script src="/load.php?debug=false&amp;lang=en&amp;modules=jquery%2Cmediawiki&amp;only=scripts&amp;skin=vector&amp;version=x6qVeSGh"></script>
+</head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Doc_sdk_intro skin-vector action-view">
-			<a id="top"></a>
+<p></p>
 
-						
-			<h1 id="firstHeading" class="firstHeading" lang="en">Doc: sdk intro</h1>
-									<div id="bodyContent" class="mw-body-content">
-									<div id="siteSub">From CyanogenMod</div>
-								<div id="contentSub"></div>
-												<div id="jump-to-nav" class="mw-jump">
-					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
-				</div>
-				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<h2><span class="mw-headline" id="What_is_the_Android_SDK.3F">What is the Android SDK?</span></h2>
-<p>The Android SDK is a <a href="http://en.wikipedia.org/wiki/Software_development_kit" class="extiw" title="wikipedia:Software development kit">software development kit</a> provided by Google for Windows, Mac OS X, and Linux computers.  The Android SDK is primarily intended to help developers create, test, and debug their Android apps.  To that end, the SDK provides  documentation, example code, virtual Android machines for running apps, framework code, support for development environments, debugging tools, and more.
-</p><p>Of special interest to end users who are interested in installing and running alternative operating systems (such as CyanogenMod) are two tools in particular:
-</p>
-<ul><li> <a href="https://wiki.cyanogenmod.org/w/Adb" title="Adb" class="mw-redirect">adb</a> -- the Android Debug Bridge, which provides a conduit between your computer and your devices, allowing you to "push" files to your computer from your device, "pull" files from your device to your computer, and even interact with your device via a command-line "shell".  <code>adb</code> is a very useful tool that you should expect to use frequently if you're interested in hacking around with your device.</li></ul>
-<ul><li> <a href="https://wiki.cyanogenmod.org/w/Fastboot" title="Fastboot" class="mw-redirect">fastboot</a> -- <code>fastboot</code> is another tool used for flashing new operating systems, wiping partitions, unlocking some devices, and more.</li></ul>
-<h2><span class="mw-headline" id="How_do_I_get.2Finstall_the_Android_SDK.3F">How do I get/install the Android SDK?</span></h2>
-<p>You can get full installation instructions for your platform from the official <a rel="nofollow" target="_blank" class="external text" href="https://developer.android.com/sdk/">Android SDK web site</a>. If you are not interested in doing Android application development, and only intend to use the SDK tools for <a href="https://wiki.cyanogenmod.org/w/Adb" title="Adb" class="mw-redirect">adb</a> and <a href="https://wiki.cyanogenmod.org/w/Fastboot" title="Fastboot" class="mw-redirect">fastboot</a>, then look for the section titled <i>GET THE SDK FOR AN EXISTING IDE</i> and download the SDK Tools package.
-</p>
+<h1 class="firstHeading" id="firstHeading" lang="en">Doc: sdk intro</h1>
+
+<div class="mw-body-content" id="bodyContent">
+<div id="siteSub">From CyanogenMod</div>
+
+<div id="contentSub">&nbsp;</div>
+
+<div class="mw-jump" id="jump-to-nav">Jump to: <a href="#mw-head">navigation</a>, <a href="#p-search">search</a></div>
+
+<div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en">
+<h2><span class="mw-headline" id="What_is_the_Android_SDK.3F">O que &eacute; Android SDK?</span></h2>
+
+<p>O Android SDK &eacute; um&nbsp;<a class="extiw" href="http://en.wikipedia.org/wiki/Software_development_kit" title="wikipedia:Software development kit">kit de desenvolvimento de software</a>&nbsp;fornecido pelo Google para Windows, Mac OS X, e Linux. O Android SDK foi concebido para ajudar desenvolvedores a criar, testar, e depurar seus aplicativos Android. Para tanto, o SDK fornece documenta&ccedil;&atilde;o, exemplos de c&oacute;digos, m&aacute;quinas virtuais Android para a execu&ccedil;&atilde;o de aplicativos, c&oacute;digos estruturais (framework), suporte para ambientes de desenvolvimento, ferramentas de depura&ccedil;&atilde;o, e muito mais.</p>
+
+<p>De especial proveito para os usu&aacute;rios finais que est&atilde;o interessados em instalar e executar sistemas operacioanis alternativos (como o CyanogenMod), existem das ferramentas em particular:</p>
+
+<ul>
+	<li><a class="mw-redirect" href="https://wiki.cyanogenmod.org/w/Adb" title="Adb">adb</a> -- o&nbsp;Android Debug Bridge, que fornece uma ponte entre computador e dispositivo, permitindo &quot;empurrar&quot;&nbsp;arquivos do computador para o dispositivo, &quot;puxar&quot; arquivos do dispositivo para o computador, e at&eacute; mesmo interagir com o dispositivo atrav&eacute;s de uma interface por linha de comando. <code>adb</code>&nbsp;&eacute; uma ferramenta bastante &uacute;til que voc&ecirc; dever&aacute; usar frequentemente se estiver interessado em explorar a fundo o seu dispositivo.</li>
+</ul>
+
+<ul>
+	<li><a class="mw-redirect" href="https://wiki.cyanogenmod.org/w/Fastboot" title="Fastboot">fastboot</a> -- <code>fastboot</code>&nbsp;&eacute; uma outra ferramenta usada para gravar novos sistemas operacionais, limpar parti&ccedil;&otilde;es, desbloquear alguns dispositivos, e muito mais.</li>
+</ul>
+
+<h2><span class="mw-headline" id="How_do_I_get.2Finstall_the_Android_SDK.3F">Como eu obtenho/instalo o&nbsp;Android SDK?</span></h2>
+
+<p>You Voc&ecirc; pode obter as intru&ccedil;&otilde;es de instala&ccedil;&atilde;o para a sua plataforma pelo&nbsp;<a class="external text" href="https://developer.android.com/sdk/" rel="nofollow" target="_blank">site oficial do Android SDK&nbsp;</a>. Se voc&ecirc; n&atilde;o est&aacute; interessado no desenvolvimento de aplicativos Android, e apenas pretende usar o&nbsp;<a class="mw-redirect" href="https://wiki.cyanogenmod.org/w/Adb" title="Adb">adb</a>&nbsp;e o&nbsp;<a class="mw-redirect" href="https://wiki.cyanogenmod.org/w/Fastboot" title="Fastboot">fastboot</a>, leia a se&ccedil;&atilde;o entitulada <i>OBTER O SDK PARA UM IDE EXISTENTE</i> e baixe o pacote de ferramentas do SDK.</p>
+
 <div class="infoBox" style="position:relative; padding:5px 5px 5px 73px; margin:0.4em 0 0.5em; background:#ddd; min-height:57px;">
-<div class="bar"></div>
-<p style="font-size:110%;"><b>Helpful Tip</b></p>
-<p>If you plan on writing Android apps, you may wish to look at <a rel="nofollow" target="_blank" class="external text" href="http://developer.android.com/sdk/installing/studio.html">Android Studio</a>, which is a free IDE, or <a href="http://en.wikipedia.org/wiki/Integrated_development_environment" class="extiw" title="wikipedia:Integrated development environment">Integrated Development Environment</a>, that can assist you in developing your programs.  You can think of an IDE as, in part, a very, very-enhanced text-editor that tracks all of the files that make up your app.  It can also make coding suggestions, provides tools for editing user interfaces, checks your syntax as you go, and can help you run and debug the apps in different versions of Android too.
-</p>
-</div>
+<div class="bar">&nbsp;</div>
 
+<p style="font-size:110%;"><b>Dica importante</b></p>
+
+<p>If Se voc&ecirc; planeja escrever aplicativos Android, talve voc&ecirc; queira dar uma olhada no&nbsp;<a class="external text" href="http://developer.android.com/sdk/installing/studio.html" rel="nofollow" target="_blank">Android Studio</a>, um IDE (<a class="extiw" href="http://en.wikipedia.org/wiki/Integrated_development_environment" title="wikipedia:Integrated development environment">Integrated Development Environment</a>) livre, que pode te orientar no desenvolvimento dos seus programas. Voc&ecirc; pode pensar num IDE, em parte, como um editor de texto ultra sofisticado, que organiza odos os arquivos que comp&otilde;em seu alicativo. Ele tamb&eacute;m pode tamb&eacute;m fazer sugest&otilde;es de c&oacute;digo, fornecer ferramentas para edi&ccedil;&atilde;o de interfaces de su&aacute;rio, conferir a sintaxe, bem como ajudar a executar e depuar aplicativos em diferentes vers&otilde;es do Android.</p>
+</div>
 <!-- 
 NewPP limit report
 Cached time: 20161110050840
@@ -61,27 +70,20 @@ Post‐expand include size: 818/2097152 bytes
 Template argument size: 606/2097152 bytes
 Highest expansion depth: 3/40
 Expensive parser function count: 0/100
--->
-
-<!-- 
+--><!-- 
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    5.604      1 - -total
 100.00%    5.604      1 - Template:Tip
--->
+--><!-- Saved in parser cache with key mediawiki-cmw_:pcache:idhash:376-0!*!0!!en!*!* and timestamp 20161110050840 and revision id 28843
+ --></div>
 
-<!-- Saved in parser cache with key mediawiki-cmw_:pcache:idhash:376-0!*!0!!en!*!* and timestamp 20161110050840 and revision id 28843
- -->
-</div>					<div class="printfooter">
-						Retrieved from "<a dir="ltr" href="https://wiki.cyanogenmod.org/index.php?title=Doc:_sdk_intro&amp;oldid=28843">https://wiki.cyanogenmod.org/index.php?title=Doc:_sdk_intro&amp;oldid=28843</a>"					</div>
-								<div class="visualClear"></div>
-							</div>
-		
-		
-		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+<div class="printfooter">Retrieved from &quot;<a dir="ltr" href="https://wiki.cyanogenmod.org/index.php?title=Doc:_sdk_intro&amp;oldid=28843">https://wiki.cyanogenmod.org/index.php?title=Doc:_sdk_intro&amp;oldid=28843</a>&quot;</div>
+
+<div class="visualClear">&nbsp;</div>
+</div>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
 mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.uls.pt"]);
-} );</script>
-<script src="https://wiki.cyanogenmod.org//meta.wikimedia.org/geoiplookup"></script>
-<script>
+} );</script><script src="https://wiki.cyanogenmod.org//meta.wikimedia.org/geoiplookup"></script><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -91,11 +93,7 @@ mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawi
   ga('set', 'anonymizeIp', true);
   ga('send', 'pageview');
 
-</script>
-<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
 mw.config.set({"wgBackendResponseTime":141});
-} );</script>
-	
-
-
-</body></html>
+} );</script></body>
+</html>
