@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Doc: sdk intro - CyanogenMod</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Doc:_sdk_intro","wgTitle":"Doc: sdk intro","wgCurRevisionId":28843,"wgRevisionId":28843,"wgArticleId":376,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Android SDK"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Doc:_sdk_intro","wgRelevantArticleId":376,"wgIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":!1,"dialogs":!1,"preview":!1,"publish":!1},
+"wgULSAcceptLanguageList":[],"wgULSCurrentAutonym":"English","wgTranslatePageTranslation":"source"});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.uls.init","ext.uls.interface","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="https://wiki.cyanogenmod.org/load.php?debug=false&amp;lang=en&amp;modules=ext.translate%7Cext.uls.nojs%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="https://wiki.cyanogenmod.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="https://wiki.cyanogenmod.org/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26.2" />
+<link rel="shortcut icon" href="https://wiki.cyanogenmod.org/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.cyanogenmod.org/opensearch_desc.php" title="CyanogenMod (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.cyanogenmod.org/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="CyanogenMod Atom feed" href="https://wiki.cyanogenmod.org/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("https://wiki.cyanogenmod.org/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Doc_sdk_intro skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Doc: sdk intro</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From CyanogenMod</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-pt-languages noprint" lang="en" dir="ltr"><div class="mw-pt-languages-label">Other languages:</div><div class="mw-pt-languages-list autonym"><a href="https://wiki.cyanogenmod.org/w/Doc:_sdk_intro/de" title="Doc: Einführung in das SDK (75% translated)" class="mw-pt-progress mw-pt-progress--high">Deutsch</a> • ‎<span class="mw-pt-languages-ui mw-pt-languages-selected mw-pt-progress mw-pt-progress--complete">English</span> • ‎<a href="https://wiki.cyanogenmod.org/w/Doc:_sdk_intro/fr" title="Installation et configuration du SDK Android (62% translated)" class="mw-pt-progress mw-pt-progress--high">français</a> • ‎<a href="https://wiki.cyanogenmod.org/w/Doc:_sdk_intro/ja" title="資料: sdkの導入 (25% translated)" class="mw-pt-progress mw-pt-progress--low">日本語</a> • ‎<a href="https://wiki.cyanogenmod.org/w/Doc:_sdk_intro/ru" title="Введение в SDK (75% translated)" class="mw-pt-progress mw-pt-progress--high">русский</a> • ‎<a href="https://wiki.cyanogenmod.org/w/Doc:_sdk_intro/zh-cn" title="文档：sdk简介 (100% translated)" class="mw-pt-progress mw-pt-progress--complete">中文（中国大陆）‎</a></div></div>
+<h2><span class="mw-headline" id="What_is_the_Android_SDK.3F">What is the Android SDK?</span></h2>
+<p>The Android SDK is a <a href="http://en.wikipedia.org/wiki/Software_development_kit" class="extiw" title="wikipedia:Software development kit">software development kit</a> provided by Google for Windows, Mac OS X, and Linux computers.  The Android SDK is primarily intended to help developers create, test, and debug their Android apps.  To that end, the SDK provides  documentation, example code, virtual Android machines for running apps, framework code, support for development environments, debugging tools, and more.
+</p><p>Of special interest to end users who are interested in installing and running alternative operating systems (such as CyanogenMod) are two tools in particular:
+</p>
+<ul><li> <a href="https://wiki.cyanogenmod.org/w/Adb" title="Adb" class="mw-redirect">adb</a> -- the Android Debug Bridge, which provides a conduit between your computer and your devices, allowing you to "push" files to your computer from your device, "pull" files from your device to your computer, and even interact with your device via a command-line "shell".  <code>adb</code> is a very useful tool that you should expect to use frequently if you're interested in hacking around with your device.</li></ul>
+<ul><li> <a href="https://wiki.cyanogenmod.org/w/Fastboot" title="Fastboot" class="mw-redirect">fastboot</a> -- <code>fastboot</code> is another tool used for flashing new operating systems, wiping partitions, unlocking some devices, and more.</li></ul>
+<h2><span class="mw-headline" id="How_do_I_get.2Finstall_the_Android_SDK.3F">How do I get/install the Android SDK?</span></h2>
+<p>You can get full installation instructions for your platform from the official <a rel="nofollow" target="_blank" class="external text" href="https://developer.android.com/sdk/">Android SDK web site</a>. If you are not interested in doing Android application development, and only intend to use the SDK tools for <a href="https://wiki.cyanogenmod.org/w/Adb" title="Adb" class="mw-redirect">adb</a> and <a href="https://wiki.cyanogenmod.org/w/Fastboot" title="Fastboot" class="mw-redirect">fastboot</a>, then look for the section titled <i>GET THE SDK FOR AN EXISTING IDE</i> and download the SDK Tools package.
+</p>
+<div class="infoBox" style="position:relative; padding:5px 5px 5px 73px; margin:0.4em 0 0.5em; background:#ddd; min-height:57px;">
+<div class="bar"></div>
+<p style="font-size:110%;"><b>Helpful Tip</b></p>
+<p>If you plan on writing Android apps, you may wish to look at <a rel="nofollow" target="_blank" class="external text" href="http://developer.android.com/sdk/installing/studio.html">Android Studio</a>, which is a free IDE, or <a href="http://en.wikipedia.org/wiki/Integrated_development_environment" class="extiw" title="wikipedia:Integrated development environment">Integrated Development Environment</a>, that can assist you in developing your programs.  You can think of an IDE as, in part, a very, very-enhanced text-editor that tracks all of the files that make up your app.  It can also make coding suggestions, provides tools for editing user interfaces, checks your syntax as you go, and can help you run and debug the apps in different versions of Android too.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20161110050840
+Cache expiry: 1209600
+Dynamic content: false
+CPU time usage: 0.175 seconds
+Real time usage: 0.195 seconds
+Preprocessor visited node count: 22/1000000
+Preprocessor generated node count: 90/1000000
+Post‐expand include size: 818/2097152 bytes
+Template argument size: 606/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    5.604      1 - -total
+100.00%    5.604      1 - Template:Tip
+-->
+
+<!-- Saved in parser cache with key mediawiki-cmw_:pcache:idhash:376-0!*!0!!en!*!* and timestamp 20161110050840 and revision id 28843
+ -->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.cyanogenmod.org/index.php?title=Doc:_sdk_intro&amp;oldid=28843">https://wiki.cyanogenmod.org/index.php?title=Doc:_sdk_intro&amp;oldid=28843</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://wiki.cyanogenmod.org/w/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="https://wiki.cyanogenmod.org/w/Category:Android_SDK" title="Category:Android SDK">Android SDK</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-uls" class="active"><a href="#" class="uls-trigger autonym">English</a></li><li id="pt-login"><a href="https://wiki.cyanogenmod.org/index.php?title=Special:UserLogin&amp;returnto=Doc%3A+sdk+intro" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="https://wiki.cyanogenmod.org/w/Doc:_sdk_intro"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+															<li  id="ca-talk" class="new"><span><a href="https://wiki.cyanogenmod.org/index.php?title=Talk:Doc:_sdk_intro&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="https://wiki.cyanogenmod.org/w/Doc:_sdk_intro" >Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="https://wiki.cyanogenmod.org/index.php?title=Doc:_sdk_intro&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="https://wiki.cyanogenmod.org/index.php?title=Doc:_sdk_intro&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://wiki.cyanogenmod.org/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search CyanogenMod [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://wiki.cyanogenmod.org/w/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="https://wiki.cyanogenmod.org/w/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-Devices"><a href="https://wiki.cyanogenmod.org/w/Devices">Devices</a></li><li id="n-About-CM"><a href="https://wiki.cyanogenmod.org/w/About">About CM</a></li><li id="n-Report-a-Wiki-Problem"><a href="https://wiki.cyanogenmod.org/w/Wiki_Problems">Report a Wiki Problem</a></li><li id="n-Recent-Changes"><a href="https://wiki.cyanogenmod.org/w/Special:RecentChanges">Recent Changes</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Get_CyanogenMod' aria-labelledby='p-Get_CyanogenMod-label'>
+			<h3 id='p-Get_CyanogenMod-label'>Get CyanogenMod</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Official-Downloads"><a href="http://download.cyanogenmod.org" rel="nofollow" target="_blank">Official Downloads</a></li><li id="n-Unofficial-Ports"><a href="https://wiki.cyanogenmod.org/w/Unofficial_Ports">Unofficial Ports</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-General_Support' aria-labelledby='p-General_Support-label'>
+			<h3 id='p-General_Support-label'>General Support</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Start-Here"><a href="https://wiki.cyanogenmod.org/w/Support">Start Here</a></li><li id="n-Chat"><a href="https://wiki.cyanogenmod.org/w/CM_IRC_channels">Chat</a></li><li id="n-Forums"><a href="http://forum.cyanogenmod.org" rel="nofollow" target="_blank">Forums</a></li><li id="n-Google.2B-Community"><a href="https://plus.google.com/communities/107373456059326217974" rel="nofollow" target="_blank">Google+ Community</a></li><li id="n-Issue-Tracker"><a href="https://wiki.cyanogenmod.org/w/Jira">Issue Tracker</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Start-Here"><a href="https://wiki.cyanogenmod.org/w/Community">Start Here</a></li><li id="n-Blog"><a href="http://www.cyanogenmod.org/blog" rel="nofollow" target="_blank">Blog</a></li><li id="n-Contributors"><a href="https://wiki.cyanogenmod.org/w/Devs">Contributors</a></li><li id="n-Facebook"><a href="https://www.facebook.com/CyanogenMod" rel="nofollow" target="_blank">Facebook</a></li><li id="n-Twitter"><a href="https://twitter.com/CyanogenMod" rel="nofollow" target="_blank">Twitter</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Developer_Resources' aria-labelledby='p-Developer_Resources-label'>
+			<h3 id='p-Developer_Resources-label'>Developer Resources</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Start-Here"><a href="https://wiki.cyanogenmod.org/w/Development">Start Here</a></li><li id="n-Gerrit-Code-Review"><a href="http://review.cyanogenmod.org" rel="nofollow" target="_blank">Gerrit Code Review</a></li><li id="n-Source-Code"><a href="https://github.com/cyanogenmod" rel="nofollow" target="_blank">Source Code</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="https://wiki.cyanogenmod.org/w/Special:WhatLinksHere/Doc:_sdk_intro" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://wiki.cyanogenmod.org/w/Special:RecentChangesLinked/Doc:_sdk_intro" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://wiki.cyanogenmod.org/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://wiki.cyanogenmod.org/index.php?title=Doc:_sdk_intro&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://wiki.cyanogenmod.org/index.php?title=Doc:_sdk_intro&amp;oldid=28843" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://wiki.cyanogenmod.org/index.php?title=Doc:_sdk_intro&amp;action=info" title="More information about this page">Page information</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 18 January 2015, at 05:17.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wiki.cyanogenmod.org/w/CyanogenMod:Privacy_policy" title="CyanogenMod:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="https://wiki.cyanogenmod.org/w/CyanogenMod:About" title="CyanogenMod:About">About CyanogenMod</a></li>
+											<li id="footer-places-disclaimer"><a href="https://wiki.cyanogenmod.org/w/CyanogenMod:General_disclaimer" title="CyanogenMod:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-poweredbyico">
+							<a href="https://wiki.cyanogenmod.org//www.mediawiki.org/"><img src="https://wiki.cyanogenmod.org/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="https://wiki.cyanogenmod.org/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.uls.pt"]);
+} );</script>
+<script src="https://wiki.cyanogenmod.org//meta.wikimedia.org/geoiplookup"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39737599-6', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+
+</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":141});
+} );</script>
+	</body>
+</html>
